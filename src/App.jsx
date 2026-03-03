@@ -1,13 +1,21 @@
 import { useState } from "react";
 import "./index.css";
 
-function App() {
-  const [name, setName] = useState("");
+function Greetings({ name, age }) {
   return (
-    <div className="flex w-full min-h-screen items-center justify-center bg-pink-100">
-      <button onClick={() => setName("Alex")} className="text-6xl font-bold">
-        Hello {name}
-      </button>
+    <div>
+      <h1>
+        Hello I'm {name}, I'm {age} years old.
+      </h1>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div className="flex flex-col w-full min-h-screen items-center justify-center bg-pink-200 gap-2">
+      <Greetings name={"Alex"} />
+      <Greetings name={"Andrew"} />
     </div>
   );
 }
