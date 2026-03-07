@@ -4,7 +4,7 @@ import "./index.css";
 function App() {
   return (
     <div className="flex flex-col w-full min-h-screen items-center justify-center bg-pink-200">
-      <SignUpForm />
+      <h1>Hello</h1>
     </div>
   );
 }
