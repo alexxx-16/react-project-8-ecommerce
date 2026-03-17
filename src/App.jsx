@@ -17,9 +17,20 @@ function ProfilePage() {
   );
 }
 function LoginPage() {
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
   return (
     <div className="flex flex-col w-full min-h-screen items-center justify-center bg-pink-200">
       <h1 className="text-4xl">Login Page</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Name:
+          <input type="text" placeholder="Type your name here" />
+        </label>
+        <button>Submit</button>
+      </form>
     </div>
   );
 }
