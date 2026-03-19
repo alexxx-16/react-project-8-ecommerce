@@ -16,6 +16,7 @@ function ProfilePage() {
     </div>
   );
 }
+
 function LoginPage() {
   function handleSubmit(e) {
     e.preventDefault();
